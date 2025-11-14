@@ -9,7 +9,7 @@ body
         border-width: 2px;
     }
     50% {
-        transform: scale(1.05); /* Slightly bigger at 50% through the animation */
+        transform: scale(1.05); /* Slightly bigger through the animation */
         border-width: 2px;
     }
     100% {
