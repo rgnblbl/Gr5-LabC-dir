@@ -62,7 +62,6 @@ h1.bordered:hover
 {
     border: lightblue 2px solid;
     background-color: blue;
-    transform: scale(120%);
     cursor: pointer;
     animation: pulse-border 1.0s ease infinite;
 }
