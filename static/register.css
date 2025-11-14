@@ -7,23 +7,11 @@ body {
     background-color: white;
     font-family: sans-serif;
 }
-@keyframes pulse-border {
-    0% {
-        transform: scale(1); /* Start size */
-        border-width: 2px;
-    }
-    50% {
-        transform: scale(1.05); /* Slightly bigger through the animation */
-        border-width: 2px;
-    }
-    100% {
-        transform: scale(1); /* End size (back to original) */
-        border-width: 2px;
-    }
-}
-text_in_center
-{
-    text-align: center;
+main {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid lightgray;
 }
 
 h1 {
@@ -56,11 +44,4 @@ a {
     margin-top: 15px;
     text-align: center;
     font-size: 0.9em;
-}
-.button:hover
-{
-    border: lightblue 2px solid;
-    background-color: blue;
-    cursor: pointer;
-    animation: pulse-border 1.0s ease infinite;
 }
