@@ -1,7 +1,11 @@
-body
-{
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
+    background-color: white;
+    font-family: sans-serif;
 }
 @keyframes pulse-border {
     0% {
@@ -22,41 +26,36 @@ text_in_center
     text-align: center;
 }
 
-main
-{
-    margin: 2vh 4vw;
-    padding: 2%
+h1 {
+    text-align: center;
+    font-size: 1.5em;
 }
-section
-{
-    margin: 5% 10%;
-    padding: 2%;
-}
-footer
-{
-    position: fixed;
-    bottom: 0;
+section {
+    margin-bottom: 15px;
 }
 
-
-h1.bordered, h2.bordered, h3.bordered, h4.bordered
-{
-    border: gray 2px solid;
-    display: inline-block;
-    font-family: 'Times New Roman';
+label {
+    display: block;
+    margin-bottom: 5px;
 }
-h1.bordered:hover
-{
-    border: lightblue 2px solid;
-    display: inline-block;
-    font-family: 'Times New Roman';
-    animation: pulse-border 1.0s ease infinite;
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
 }
-.button
-{
-    border: lightgray 2px solid;
-    background-color: gray;
-    transition: lightblue 0.3s ease;
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
+a {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.9em;
 }
 .button:hover
 {
