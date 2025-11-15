@@ -3,3 +3,66 @@ body
     margin: 0;
     padding: 0;
 }
+@keyframes pulse-border {
+    0% {
+        transform: scale(1); /* Start size */
+        border-width: 2px;
+    }
+    50% {
+        transform: scale(1.05); /* Slightly bigger at 50% through the animation */
+        border-width: 2px;
+    }
+    100% {
+        transform: scale(1); /* End size (back to original) */
+        border-width: 2px;
+    }
+}
+text_in_center
+{
+    text-align: center;
+}
+
+main
+{
+    margin: 2vh 4vw;
+    padding: 2%
+}
+section
+{
+    margin: 5% 10%;
+    padding: 2%;
+}
+footer
+{
+    position: fixed;
+    bottom: 0;
+}
+
+
+h1.bordered, h2.bordered, h3.bordered, h4.bordered
+{
+    border: gray 2px solid;
+    display: inline-block;
+    font-family: 'Times New Roman';
+}
+h1.bordered:hover
+{
+    border: lightblue 2px solid;
+    display: inline-block;
+    font-family: 'Times New Roman';
+    animation: pulse-border 1.0s ease infinite;
+}
+.button
+{
+    border: lightgray 2px solid;
+    background-color: gray;
+    transition: lightblue 0.3s ease;
+}
+.button:hover
+{
+    border: lightblue 2px solid;
+    background-color: blue;
+    transform: scale(120%);
+    cursor: pointer;
+    animation: pulse-border 1.0s ease infinite;
+}
